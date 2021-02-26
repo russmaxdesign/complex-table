@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Complex table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      max-width: 40em;
+      margin: 0;
+      padding: 20px;
+      font-size: 100%;
+      line-height: 1.3;
+      font-family: helvetica, arial, sans-serif;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    caption {
+      margin: 0 0 .5em;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-align: left;
+    }
+
+    th {
+      text-align: left;
+      font-weight: normal;
+    }
+
+    .highlight {
+      background: #eee;
+    }
+
+    .highlight th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      border: 1px solid #999;
+      padding: .5em;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Complex table</h1>
+  <p><a href="#">Dummy link before</a></p>
+  <p>This table is to test how screen readers report each cell in relation to their respective header cells. It also tests the ALT attributes on icons.</p>
+
+<table>
+  <caption>Simple nonprofit pricing</caption>
+  <thead>
+    <tr class="highlight">
+      <td></td>
+      <th id="gofundme">GoFundMe</th>
+      <th id="essentials">Essential</th>
+      <th id="premium">Premium</th>
+      <th id="enterprise">Enterprise</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="highlight">
+      <th id="pricing" colspan="5">Pricing</th>
+    </tr>
+    <tr>
+      <th headers="pricing" id="plan-pricing">Plan cost</th>
+      <td headers="gofundme pricing plan-pricing">$1.00</td>
+      <td headers="essentials pricing plan-pricing">$1.25</td>
+      <td headers="premium pricing plan-pricing">$1.20</td>
+      <td headers="enterprise pricing plan-pricing">$1.00</td>
+    </tr>
+    <tr>
+      <th headers="pricing" id="platform-pricing">Platform fee</th>
+      <td headers="gofundme pricing platform-pricing">$2.00</td>
+      <td headers="essentials pricing platform-pricing">$3.00</td>
+      <td headers="premium pricing platform-pricing">$1.80</td>
+      <td headers="enterprise pricing platform-pricing">$1.60</td>
+    </tr>
+    <tr class="highlight">
+      <th id="features" colspan="5">Features</th>
+    </tr>
+    <tr>
+      <th headers="features" id="mobile-features">Mobile optimized</th>
+      <td headers="gofundme features mobile-features"><img src="icon-cross.png" alt="Feature not available"></td>
+      <td headers="essentials features mobile-features"><img src="icon-tick.png" alt="Feature available"></td>
+      <td headers="premium features mobile-features"><img src="icon-tick.png" alt="Feature available"></td>
+      <td headers="enterprise features mobile-features"><img src="icon-tick.png" alt="Feature available"></td>
+    </tr>
+    <tr>
+      <th headers="features" id="team-features">Team fundraising</th>
+      <td headers="gofundme features team-features"><img src="icon-cross.png" alt="Feature not available"></td>
+      <td headers="essentials features team-features"><img src="icon-cross.png" alt="Feature not available"></td>
+      <td headers="premium features team-features"><img src="icon-tick.png" alt="Feature available"></td>
+      <td headers="enterprise features team-features"><img src="icon-tick.png" alt="Feature available"></td>
+    </tr>
+  </tbody>
+</table>
+
+  <p><a href="#">Dummy link after</a></p>
+</body>
+</html>
