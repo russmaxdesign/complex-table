@@ -50,7 +50,7 @@
     width: 1px;
     height: 1px;
     padding: 0;
-    overflow: sr-only;
+    overflow: hidden;
     clip: rect(0,0,0,0);
     white-space: nowrap;
     -webkit-clip-path: inset(50%);
@@ -60,7 +60,7 @@
   </style>
 </head>
 <body>
-  <h1>Complex table</h1>
+  <h1>Complex table xxx</h1>
   <p><a href="#">Dummy link before</a></p>
   <p>This table is to test how screen readers report each cell in relation to their respective header cells. It also tests the ALT attributes on icons.</p>
 
@@ -169,19 +169,19 @@
     <tr>
       <th>Team fundraising</th>
       <td>
-        <img src="icon-cross.png" role="presentation" alt="">
+        <img src="icon-cross.png" aria-hidden="true" alt="">
         <span class="sr-only">Feature not available</span>
       </td>
       <td>
-        <img src="icon-cross.png" role="presentation" alt="">
+        <img src="icon-cross.png" aria-hidden="true" alt="">
         <span class="sr-only">Feature not available</span>
       </td>
       <td>
-        <img src="icon-tick.png" role="presentation" >
+        <img src="icon-tick.png" aria-hidden="true" alt="">
         <span class="sr-only">Feature available</span>
       </td>
       <td>
-        <img src="icon-tick.png" role="presentation" >
+        <img src="icon-tick.png" aria-hidden="true" alt="">
         <span class="sr-only">Feature available</span>
       </td>
     </tr>
