@@ -60,60 +60,10 @@
   </style>
 </head>
 <body>
-  <h1>Complex table test x 3</h1>
-  <p><a href="#">Dummy link before</a></p>
+  <h1>Complex table test</h1>
   <p>This table is to test how screen readers report each cell in relation to their respective header cells. It also tests the ALT attributes on icons.</p>
 
-<table>
-  <caption>Simple nonprofit pricing</caption>
-  <thead>
-    <tr class="highlight">
-      <td></td>
-      <th id="gofundme">GoFundMe</th>
-      <th id="essentials">Essential</th>
-      <th id="premium">Premium</th>
-      <th id="enterprise">Enterprise</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="highlight">
-      <th id="pricing" colspan="5">Pricing</th>
-    </tr>
-    <tr>
-      <th headers="pricing" id="plan-pricing">Plan cost</th>
-      <td headers="gofundme pricing plan-pricing">$1.00</td>
-      <td headers="essentials pricing plan-pricing">$1.25</td>
-      <td headers="premium pricing plan-pricing">$1.20</td>
-      <td headers="enterprise pricing plan-pricing">$1.00</td>
-    </tr>
-    <tr>
-      <th headers="pricing" id="platform-pricing">Platform fee</th>
-      <td headers="gofundme pricing platform-pricing">$2.00</td>
-      <td headers="essentials pricing platform-pricing">$3.00</td>
-      <td headers="premium pricing platform-pricing">$1.80</td>
-      <td headers="enterprise pricing platform-pricing">$1.60</td>
-    </tr>
-    <tr class="highlight">
-      <th id="features" colspan="5">Features</th>
-    </tr>
-    <tr>
-      <th headers="features" id="mobile-features">Mobile optimized</th>
-      <td headers="gofundme features mobile-features"><img src="icon-cross.png" alt="Feature not available"></td>
-      <td headers="essentials features mobile-features"><img src="icon-tick.png" alt="Feature available"></td>
-      <td headers="premium features mobile-features"><img src="icon-tick.png" alt="Feature available"></td>
-      <td headers="enterprise features mobile-features"><img src="icon-tick.png" alt="Feature available"></td>
-    </tr>
-    <tr>
-      <th headers="features" id="team-features">Team fundraising</th>
-      <td headers="gofundme features team-features"><img src="icon-cross.png" alt="Feature not available"></td>
-      <td headers="essentials features team-features"><img src="icon-cross.png" alt="Feature not available"></td>
-      <td headers="premium features team-features"><img src="icon-tick.png" alt="Feature available"></td>
-      <td headers="enterprise features team-features"><img src="icon-tick.png" alt="Feature available"></td>
-    </tr>
-  </tbody>
-</table>
-
-  <p><a href="#">Dummy link between</a></p>
+  <p><a href="#">Dummy link before</a></p>
 
 <table>
   <caption>Simple nonprofit pricing</caption>
@@ -128,7 +78,7 @@
   </thead>
   <tbody>
     <tr class="highlight">
-      <th colspan="5">Pricing</th>
+      <td colspan="5">Pricing</td>
     </tr>
     <tr>
       <th>Plan cost</th>
@@ -145,50 +95,26 @@
       <td>$1.60</td>
     </tr>
     <tr class="highlight">
-      <th colspan="5">Features</th>
+      <td colspan="5">Features</td>
     </tr>
     <tr>
       <th>Mobile optimized</th>
-      <td>
-        <img src="icon-cross.png" aria-hidden="true" alt="">
-        <span class="sr-only">Feature not available</span>
-      </td>
-      <td>
-        <img src="icon-tick.png" aria-hidden="true" alt="">
-        <span class="sr-only">Feature available</span>
-      </td>
-      <td>
-        <img src="icon-tick.png" aria-hidden="true" alt="">
-        <span class="sr-only">Feature available</span>
-      </td>
-      <td>
-        <img src="icon-tick.png" aria-hidden="true" alt="">
-        <span class="sr-only">Feature available</span>
-      </td>
+      <td><img src="icon-cross.png" aria-hidden="true" alt=""><span class="sr-only">Feature not available</span></td>
+      <td><img src="icon-tick.png" aria-hidden="true" alt=""><span class="sr-only">Feature available</span></td>
+      <td><img src="icon-tick.png" aria-hidden="true" alt=""><span class="sr-only">Feature available</span></td>
+      <td><img src="icon-tick.png" aria-hidden="true" alt=""><span class="sr-only">Feature available</span></td>
     </tr>
     <tr>
       <th>Team fundraising</th>
-      <td>
-        <img src="icon-cross.png" aria-hidden="true" alt="">
-        <span class="sr-only">Feature not available</span>
-      </td>
-      <td>
-        <img src="icon-cross.png" aria-hidden="true" alt="">
-        <span class="sr-only">Feature not available</span>
-      </td>
-      <td>
-        <img src="icon-tick.png" aria-hidden="true" alt="">
-        <span class="sr-only">Feature available</span>
-      </td>
-      <td>
-        <img src="icon-tick.png" aria-hidden="true" alt="">
-        <span class="sr-only">Feature available</span>
-      </td>
+      <td><img src="icon-cross.png" aria-hidden="true" alt=""><span class="sr-only">Feature not available</span></td>
+      <td><img src="icon-cross.png" aria-hidden="true" alt=""><span class="sr-only">Feature not available</span></td>
+      <td><img src="icon-tick.png" aria-hidden="true" alt=""><span class="sr-only">Feature available</span></td>
+      <td><img src="icon-tick.png" aria-hidden="true" alt=""><span class="sr-only">Feature available</span></td>
     </tr>
   </tbody>
 </table>
 
-  <p><a href="#">Dummy link after</a></p>
+  <p><a href="#">Dummy link between</a></p>
 
 <table>
   <caption>Animals</caption>
@@ -203,7 +129,7 @@
   </thead>
   <tbody>
     <tr class="highlight">
-      <th colspan="5">Appearance</th>
+      <td colspan="5">Appearance</td>
     </tr>
     <tr>
       <th tabindex="0">Fur</th>
@@ -213,14 +139,14 @@
       <td tabindex="0" aria-label="Birds have Fur? No">No</td>
     </tr>
     <tr>
-      <th tabindex="0">feathers</th>
+      <th tabindex="0">Feathers</th>
       <td tabindex="0" aria-label="Do Dogs have Feathers? No">No</td>
       <td tabindex="0" aria-label="Do Cats have Feathers? No">No</td>
       <td tabindex="0" aria-label="Do Rabbits have Feathers? No">No</td>
       <td tabindex="0" aria-label="Do Birds have Feathers? Yes">Yes</td>
     </tr>
     <tr class="highlight">
-      <th colspan="5">Personality</th>
+      <td colspan="5">Personality</td>
     </tr>
     <tr>
       <th tabindex="0">Loyal</th>
@@ -238,6 +164,8 @@
     </tr>
   </tbody>
 </table>
+
+  <p><a href="#">Dummy link after</a></p>
 
 </body>
 </html>
