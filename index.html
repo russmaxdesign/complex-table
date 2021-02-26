@@ -45,6 +45,18 @@
       padding: .5em;
     }
 
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: sr-only;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    border: 0;
+  }
   </style>
 </head>
 <body>
@@ -101,6 +113,82 @@
   </tbody>
 </table>
 
+  <p><a href="#">Dummy link between</a></p>
+
+<table>
+  <caption>Simple nonprofit pricing</caption>
+  <thead>
+    <tr class="highlight">
+      <td></td>
+      <th>GoFundMe</th>
+      <th>Essential</th>
+      <th>Premium</th>
+      <th>Enterprise</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="highlight">
+      <th colspan="5">Pricing</th>
+    </tr>
+    <tr>
+      <th>Plan cost</th>
+      <td>$1.00</td>
+      <td>$1.25</td>
+      <td>$1.20</td>
+      <td>$1.00</td>
+    </tr>
+    <tr>
+      <th>Platform fee</th>
+      <td>$2.00</td>
+      <td>$3.00</td>
+      <td>$1.80</td>
+      <td>$1.60</td>
+    </tr>
+    <tr class="highlight">
+      <th colspan="5">Features</th>
+    </tr>
+    <tr>
+      <th>Mobile optimized</th>
+      <td>
+        <img src="icon-cross.png" role="presentation" alt="">
+        <span class="sr-only">Feature not available</span>
+      </td>
+      <td>
+        <img src="icon-tick.png" role="presentation" >
+        <span class="sr-only">Feature available</span>
+      </td>
+      <td>
+        <img src="icon-tick.png" role="presentation" >
+        <span class="sr-only">Feature available</span>
+      </td>
+      <td>
+        <img src="icon-tick.png" role="presentation" >
+        <span class="sr-only">Feature available</span>
+      </td>
+    </tr>
+    <tr>
+      <th headers="features" id="team-features">Team fundraising</th>
+      <td>
+        <img src="icon-cross.png" role="presentation" alt="">
+        <span class="sr-only">Feature not available</span>
+      </td>
+      <td>
+        <img src="icon-cross.png" role="presentation" alt="">
+        <span class="sr-only">Feature not available</span>
+      </td>
+      <td>
+        <img src="icon-tick.png" role="presentation" >
+        <span class="sr-only">Feature available</span>
+      </td>
+      <td>
+        <img src="icon-tick.png" role="presentation" >
+        <span class="sr-only">Feature available</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
   <p><a href="#">Dummy link after</a></p>
+
 </body>
 </html>
